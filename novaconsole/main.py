@@ -21,9 +21,9 @@ def parse_args():
                    'rather than nova server name.  Using this '
                    'option does not require authentication.')
     p.add_argument('--escape', '-e',
-                   default='~',
+                   default=']',     # Y.Kawada
                    help='Character used to start escape sequences when '
-                   'connected. Defaults to "~".')
+                   'connected. Defaults to "]".')
     p.add_argument('--close-wait', '-w',
                    default=0.5,
                    type=float,
